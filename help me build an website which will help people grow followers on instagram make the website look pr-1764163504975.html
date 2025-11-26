@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growtify - Free Instagram Growth Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(236, 72, 153, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 30px rgba(236, 72, 153, 0.5);
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .animate-fade-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        .glow-effect {
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #ec4899, #f43f5e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .slide-in {
+            animation: slideIn 0.4s ease-out;
+        }
+
+        .secure-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(16, 185, 129, 0.2));
+            border: 1px solid rgba(34, 197, 94, 0.5);
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #86efac;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-black/30 border-b border-purple-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <span class="text-3xl">🚀</span>
+                    <span class="text-2xl font-bold gradient-text">Growtify</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <button onclick="scrollToSection('features')" class="hover:text-pink-400 transition">Features</button>
+                    <button onclick="scrollToSection('strategies')" class="hover:text-pink-400 transition">Strategies</button>
+                    <button onclick="scrollToSection('faq')" class="hover:text-pink-400 transition">FAQ</button>
+                </div>
+                <button onclick="scrollToSection('strategies')" class="bg-gradient-to-r from-pink-500 to-rose-500 px-6 py-2 rounded-full font-semibold hover:shadow-lg hover:shadow-pink-500/50 transition">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center px-4 pt-20">
+        <div class="text-center max-w-4xl animate-fade-up">
+            <h1 class="text-6xl md:text-7xl font-bold mb-6 leading-tight">
+                Grow Your Instagram 📈
+                <span class="gradient-text">Followers for FREE</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8">
+                Learn proven strategies to boost your Instagram presence organically. Get personalized AI-powered analysis and growth recommendations! ✨
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="scrollToSection('strategies')" class="bg-gradient-to-r from-pink-500 to-rose-500 px-8 py-4 rounded-full text-lg font-bold hover:shadow-2xl hover:shadow-pink-500/50 transition transform hover:scale-105">
+                    Start Growing 🚀
+                </button>
+                <button onclick="openModal('trust')" class="border-2 border-pink-500 px-8 py-4 rounded-full text-lg font-bold hover:bg-pink-500/10 transition">
+                    Why Trust Us? ✅
+                </button>
+            </div>
+            <div class="mt-16 grid grid-cols-3 gap-8 text-center">
+                <div class="glow-effect">
+                    <p class="text-4xl font-bold gradient-text">100%</p>
+                    <p class="text-gray-300">Free & Legal</p>
+                </div>
+                <div class="glow-effect">
+                    <p class="text-4xl font-bold gradient-text">10K+</p>
+                    <p class="text-gray-300">Users Helped</p>
+                </div>
+                <div class="glow-effect">
+                    <p class="text-4xl font-bold gradient-text">24/7</p>
+                    <p class="text-gray-300">Accessible</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl font-bold text-center mb-16 gradient-text">Why Choose Growtify? 💡</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-purple-600/20 to-pink-600/20 p-8 rounded-2xl border border-purple-500/30 hover:border-pink-500/50 transition">
+                    <p class="text-4xl mb-4">🎯</p>
+                    <h3 class="text-2xl font-bold mb-4">Targeted Growth</h3>
+                    <p class="text-gray-300">Learn how to attract your ideal audience and build a community that genuinely cares about your content.</p>
+                    <button onclick="openModal('targeted')" class="mt-4 text-pink-400 font-semibold hover:text-pink-300 transition">Learn More →</button>
+                </div>
+                <div class="bg-gradient-to-br from-purple-600/20 to-pink-600/20 p-8 rounded-2xl border border-purple-500/30 hover:border-pink-500/50 transition">
+                    <p class="text-4xl mb-4">⚡</p>
+                    <h3 class="text-2xl font-bold mb-4">Quick Results</h3>
+                    <p class="text-gray-300">Implement our strategies today and see noticeable changes in your engagement and follower count within weeks.</p>
+                    <button onclick="openModal('quick')" class="mt-4 text-pink-400 font-semibold hover:text-pink-300 transition">Learn More →</button>
+                </div>
+                <div class="bg-gradient-to-br from-purple-600/20 to-pink-600/20 p-8 rounded-2xl border border-purple-500/30 hover:border-pink-500/50 transition">
+                    <p class="text-4xl mb-4">🔒</p>
+                    <h3 class="text-2xl font-bold mb-4">100% Secure</h3>
+                    <p class="text-gray-300">Bank-level encryption and zero password storage. Your data is protected.</p>
+                    <button onclick="openModal('safe')" class="mt-4 text-pink-400 font-semibold hover:text-pink-300 transition">Learn More →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategies Section -->
+    <section id="strategies" class="py-20 px-4 bg-black/30">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl font-bold text-center mb-16 gradient-text">Proven Strategies 🎬</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-br from-purple-600/30 to-pink-600/30 p-8 rounded-2xl border border-purple-500/30">
+                    <div class="flex items-center mb-4">
+                        <p class="text-4xl mr-4">📸</p>
+                        <h3 class="text-2xl font-bold">Content is King</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Post high-quality, consistent, and valuable content that resonates with your target audience. Use trending sounds and formats.</p>
+                    <button onclick="openModal('content')" class="text-pink-400 font-semibold hover:text-pink-300 transition">Deep Dive →</button>
+                </div>
+                <div class="bg-gradient-to-br from-purple-600/30 to-pink-600/30 p-8 rounded-2xl border border-purple-500/30">
+                    <div class="flex items-center mb-4">
+                        <p class="text-4xl mr-4">🏷️</p>
+                        <h3 class="text-2xl font-bold">Hashtag Mastery</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Use 15-30 relevant hashtags strategically. Mix popular and niche hashtags to maximize discoverability and reach.</p>
+                    <button onclick="openModal('hashtag')" class="text-pink-400 font-semibold hover:text-pink-300 transition">Deep Dive →</button>
+                </div>
+                <div class="bg-gradient-to-br from-purple-600/30 to-pink-600/30 p-8 rounded-2xl border border-purple-500/30">
+                    <div class="flex items-center mb-4">
+                        <p class="text-4xl mr-4">💬</p>
+                        <h3 class="text-2xl font-bold">Engagement Boost</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Actively engage with your followers and similar accounts. Reply to comments, like posts, and build genuine relationships.</p>
+                    <button onclick="openModal('engagement')" class="text-pink-400 font-semibold hover:text-pink-300 transition">Deep Dive →</button>
+                </div>
+                <div class="bg-gradient-to-br from-purple-600/30 to-pink-600/30 p-8 rounded-2xl border border-purple-500/30">
+                    <div class="flex items-center mb-4">
+                        <p class="text-4xl mr-4">⏰</p>
+                        <h3 class="text-2xl font-bold">Posting Schedule</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Post consistently at optimal times when your audience is most active. Use Instagram Insights to find your peak hours.</p>
+                    <button onclick="openModal('schedule')" class="text-pink-400 font-semibold hover:text-pink-300 transition">Deep Dive →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 px-4 bg-black/30">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl font-bold text-center mb-16 gradient-text">Frequently Asked Questions ❓</h2>
+            <div class="space-y-4">
+                <div class="bg-gradient-to-r from-purple-600/20 to-pink-600/20 p-6 rounded-xl border border-purple-500/30 cursor-pointer hover:border-pink-500/50 transition" onclick="toggleFaq(1)">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-bold text-lg">How do I start growing my Instagram?</h4>
+                        <span id="faq-icon-1">▼</span>
+                    </div>
+                    <p id="faq-content-1" class="text-gray-300 mt-4 hidden">Start by exploring our proven strategies section. We recommend beginning with content optimization and hashtag research. Implement one strategy at a time and track your results. Most creators see noticeable improvements within 2-3 weeks of consistent effort.</p>
+                </div>
+                <div class="bg-gradient-to-r from-purple-600/20 to-pink-600/20 p-6 rounded-xl border border-purple-500/30 cursor-pointer hover:border-pink-500/50 transition" onclick="toggleFaq(2)">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-bold text-lg">Are these strategies safe and legal?</h4>
+                        <span id="faq-icon-2">▼</span>
+                    </div>
+                    <p id="faq-content-2" class="text-gray-300 mt-4 hidden">Absolutely! All our strategies comply with Instagram's terms of service. We only teach organic, authentic methods that don't use bots, fake followers, or prohibited automation. Everything is within Instagram's guidelines and completely safe for your account.</p>
+                </div>
+                <div class="bg-gradient-to-r from-purple-600/20 to-pink-600/20 p-6 rounded-xl border border-purple-500/30 cursor-pointer hover:border-pink-500/50 transition" onclick="toggleFaq(3)">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-bold text-lg">How long does it take to see results?</h4>
+                        <span id="faq-icon-3">▼</span>
+                    </div>
+                    <p id="faq-content-3" class="text-gray-300 mt-4 hidden">Results vary based on consistency and content quality. Most creators see increased engagement within 1-2 weeks and noticeable follower growth within 3-4 weeks. The key is staying consistent with your posting schedule and implementing multiple strategies together.</p>
+                </div>
+                <div class="bg-gradient-to-r from-purple-600/20 to-pink-600/20 p-6 rounded-xl border border-purple-500/30 cursor-pointer hover:border-pink-500/50 transition" onclick="toggleFaq(4)">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-bold text-lg">Do I need to spend money on ads?</h4>
+                        <span id="faq-icon-4">▼</span>
+                    </div>
+                    <p id="faq-content-4" class="text-gray-300 mt-4 hidden">No! Growtify is 100% free and all our strategies teach organic growth methods. You don't need to spend money on Instagram ads or paid promotions. However, some creators choose to use ads after building a solid organic foundation.</p>
+                </div>
+                <div class="bg-gradient-to-r from-purple-600/20 to-pink-600/20 p-6 rounded-xl border border-purple-500/30 cursor-pointer hover:border-pink-500/50 transition" onclick="toggleFaq(5)">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-bold text-lg">What if I'm in a niche market?</h4>
+                        <span id="faq-icon-5">▼</span>
+                    </div>
+                    <p id="faq-content-5" class="text-gray-300 mt-4 hidden">Our strategies work for any niche! The key is adapting the methods to your specific audience. Focus on finding niche-specific hashtags, engaging with similar accounts in your space, and creating content that solves problems for your target community. Niche audiences often have higher engagement rates!</p>
+                </div>
+                <div class="bg-gradient-to-r from-purple-600/20 to-pink-600/20 p-6 rounded-xl border border-purple-500/30 cursor-pointer hover:border-pink-500/50 transition" onclick="toggleFaq(6)">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-bold text-lg">Is this really 100% free?</h4>
+                        <span id="faq-icon-6">▼</span>
+                    </div>
+                    <p id="faq-content-6" class="text-gray-300 mt-4 hidden">Yes! Growtify is completely free. We don't charge any fees, require credit cards, or ask for subscriptions. Our goal is to help you grow organically without spending money. All our guides, strategies, and resources are available for free to everyone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl font-bold mb-8">Ready to Grow Your Instagram? 🚀</h2>
+            <p class="text-xl text-gray-300 mb-8">Start implementing our proven strategies today and watch your account grow organically!</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="scrollToSection('strategies')" class="bg-gradient-to-r from-pink-500 to-rose-500 px-10 py-4 rounded-full text-lg font-bold hover:shadow-2xl hover:shadow-pink-500/50 transition transform hover:scale-105">
+                    Explore Strategies Now ✨
+                </button>
+                <button onclick="openModal('support')" class="border-2 border-pink-500 px-10 py-4 rounded-full text-lg font-bold hover:bg-pink-500/10 transition">
+                    Get Support 💬
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-purple-500/30 py-12 px-4 bg-black/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="text-3xl">🚀</span>
+                        <span class="text-xl font-bold gradient-text">Growtify</span>
+                    </div>
+                    <p class="text-gray-400">Your free guide to growing Instagram followers organically and authentically with proven strategies.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><button onclick="scrollToSection('features')" class="hover:text-pink-400 transition">Features</button></li>
+                        <li><button onclick="scrollToSection('strategies')" class="hover:text-pink-400 transition">Strategies</button></li>
+                        <li><button onclick="scrollToSection('faq')" class="hover:text-pink-400 transition">FAQ</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><button onclick="openModal('about')" class="hover:text-pink-400 transition">About Us</button></li>
+                        <li><button onclick="openModal('privacy')" class="hover:text-pink-400 transition">Privacy Policy</button></li>
+                        <li><button onclick="openModal('terms')" class="hover:text-pink-400 transition">Terms of Service</button></li>
+                        <li><button onclick="openModal('security')" class="hover:text-pink-400 transition">Security</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-purple-500/30 pt-8 text-center text-gray-400">
+                <p>© 2024 Growtify. All rights reserved. Made with ❤️ for Instagram creators. 🔒 Bank-level security.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+        <div class="bg-gradient-to-br from-purple-900 to-slate-900 rounded-2xl max-w-2xl w-full max-h-96 overflow-y-auto border border-purple-500/30">
+            <div class="p-8">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 id="modal-title" class="text-2xl font-bold gradient-text"></h3>
+                    <button onclick="closeModal()" class="text-2xl hover:text-pink-400 transition">✕</button>
+                </div>
+                <div id="modal-content" class="text-gray-300 space-y-4"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modalContent = {
+            trust: {
+                title: "Why Trust Growtify? ✅",
+                content: `
+                    <p>✓ <strong>Proven Methods:</strong> Our strategies are based on Instagram's official algorithm and best practices used by successful creators.</p>
+                    <p>✓ <strong>No Hidden Fees:</strong> Completely free with no premium versions or hidden charges.</p>
+                    <p>✓ <strong>Ethical Growth:</strong> We only teach organic, authentic methods that comply with Instagram's terms.</p>
+                    <p>✓ <strong>Secure & Safe:</strong> Bank-level encryption with industry-standard security practices.</p>
+                    <p>✓ <strong>Community Driven:</strong> Thousands of creators have successfully used our tips to grow their accounts.</p>
+                    <p>✓ <strong>Always Updated:</strong> We keep our strategies current with Instagram's algorithm changes.</p>
+                `
+            },
+            safe: {
+                title: "Security & Privacy 🔒",
+                content: `
+                    <p><strong>How We Protect Your Data:</strong></p>
+                    <p>✓ Bank-Level Encryption - All your data is secured</p>
+                    <p>✓ TLS 1.3 Encryption - All data encrypted in transit</p>
+                    <p>✓ AES-256 Encryption - Data encrypted at rest on secure servers</p>
+                    <p>✓ No Password Storage - We never ask for or store passwords</p>
+                    <p>✓ Privacy First - GDPR & CCPA Compliant</p>
+                    <p>✓ Transparent - We only use data to provide better strategies</p>
+                    <p class="text-green-400 font-semibold mt-4">Your account security is our top priority!</p>
+                `
+            },
+            targeted: {
+                title: "Targeted Growth Strategy 🎯",
+                content: `
+                    <p><strong>How to Attract Your Ideal Audience:</strong></p>
+                    <p>1. Define your niche clearly and understand your target demographic</p>
+                    <p>2. Follow accounts similar to yours and engage with their followers</p>
+                    <p>3. Use location tags and niche-specific hashtags to reach your people</p>
+                    <p>4. Create content that solves problems or entertains your specific audience</p>
+                    <p>5. Join communities and conversations relevant to your niche</p>
+                    <p class="text-pink-400 font-semibold">Result: Quality followers who actually care about your content!</p>
+                `
+            },
+            quick: {
+                title: "Quick Results Timeline ⚡",
+                content: `
+                    <p><strong>Week 1-2:</strong> Increased engagement, more likes and comments</p>
+                    <p><strong>Week 2-3:</strong> Noticeable follower growth begins</p>
+                    <p><strong>Week 3-4:</strong> Consistent daily growth, better reach</p>
+                    <p><strong>Month 2+:</strong> Exponential growth as your account gains momentum</p>
+                    <p class="text-yellow-400 font-semibold">Note: Results vary based on consistency and content quality. Stay patient and persistent!</p>
+                `
+            },
+            content: {
+                title: "Content is King Strategy 📸",
+                content: `
+                    <p><strong>Content Creation Tips:</strong></p>
+                    <p>• Post 3-5 times per week consistently</p>
+                    <p>• Use high-quality images or videos (minimum 1080px width)</p>
+                    <p>• Include trending sounds and music in videos</p>
+                    <p>• Create content that educates, entertains, or inspires</p>
+                    <p>• Use Instagram's native editing tools for better algorithm push</p>
+                    <p>• Mix different content types: Reels, Stories, Carousel posts, and static images</p>
+                    <p class="text-blue-400 font-semibold">Remember: Quality over quantity always wins!</p>
+                `
+            },
+            hashtag: {
+                title: "Hashtag Mastery 🏷️",
+                content: `
+                    <p><strong>Hashtag Strategy:</strong></p>
+                    <p>• Use 15-30 hashtags per post (Instagram allows up to 30)</p>
+                    <p>• Mix: 5-10 trending, 10-15 mid-tier, 5-10 niche hashtags</p>
+                    <p>• Research hashtags in your niche and check their engagement</p>
+                    <p>• Create a branded hashtag for your community</p>
+                    <p>• Avoid banned hashtags that violate Instagram's policies</p>
+                    <p>• Use hashtag research tools to find relevant tags</p>
+                    <p class="text-green-400 font-semibold">Pro Tip: Put hashtags in first comment to keep caption clean!</p>
+                `
+            },
+            engagement: {
+                title: "Engagement Boost Strategy 💬",
+                content: `
+                    <p><strong>How to Boost Engagement:</strong></p>
+                    <p>• Reply to every comment within the first hour of posting</p>
+                    <p>• Spend 15-30 minutes daily liking and commenting on similar accounts</p>
+                    <p>• Ask questions in your captions to encourage comments</p>
+                    <p>• Use polls and questions in Instagram Stories</p>
+                    <p>• Engage with followers' content, not just your own</p>
+                    <p>• Create content that sparks conversation and debates</p>
+                    <p class="text-purple-400 font-semibold">Key: Be genuine and authentic in your interactions!</p>
+                `
+            },
+            schedule: {
+                title: "Posting Schedule Optimization ⏰",
+                content: `
+                    <p><strong>Finding Your Optimal Times:</strong></p>
+                    <p>• Check Instagram Insights for when your followers are most active</p>
+                    <p>• Generally: 6-9 AM, 12-2 PM, 7-11 PM work well for most niches</p>
+                    <p>• Post consistently at the same times to train your audience</p>
+                    <p>• Test different posting times and track engagement</p>
+                    <p>• Consider your audience's timezone</p>
+                    <p>• Post Reels more frequently (daily if possible) for better reach</p>
+                    <p class="text-orange-400 font-semibold">Consistency matters more than frequency!</p>
+                `
+            },
+            support: {
+                title: "Get Support 💬",
+                content: `
+                    <p><strong>How We Can Help:</strong></p>
+                    <p>We're here to answer any questions about growing your Instagram organically!</p>
+                    <p><strong>Common Questions We Answer:</strong></p>
+                    <p>• How to optimize your specific niche</p>
+                    <p>• Content strategy personalized for your goals</p>
+                    <p>• Troubleshooting engagement issues</p>
+                    <p>• Algorithm updates and best practices</p>
+                    <p><strong>Ways to Get Help:</strong></p>
+                    <p>• Review our comprehensive guides above</p>
+                    <p>• Check our FAQ section for quick answers</p>
+                    <p>• Explore each strategy's deep-dive section</p>
+                    <p class="text-green-400 font-semibold">All support is free and available 24/7!</p>
+                `
+            },
+            about: {
+                title: "About Growtify",
+                content: `
+                    <p><strong>Our Mission:</strong></p>
+                    <p>To help creators grow their Instagram presence organically and authentically without spending money or compromising their account safety.</p>
+                    <p><strong>What We Believe:</strong></p>
+                    <p>✓ Growth should be organic and authentic</p>
+                    <p>✓ Everyone deserves free access to growth strategies</p>
+                    <p>✓ Quality followers matter more than quantity</p>
+                    <p>✓ Instagram should be fun and rewarding for creators</p>
+                    <p><strong>Our Commitment:</strong></p>
+                    <p>We stay updated with Instagram's latest changes and provide strategies that work with the current algorithm, not against it.</p>
+                `
+            },
+            privacy: {
+                title: "Privacy Policy",
+                content: `
+                    <p><strong>Your Privacy Matters:</strong></p>
+                    <p>Growtify respects your privacy and complies with GDPR, CCPA, and Instagram's data policies.</p>
+                    <p><strong>What We DON'T Do:</strong></p>
+                    <p>✓ We don't ask for your Instagram password</p>
+                    <p>✓ We don't access your account or personal data</p>
+                    <p>✓ We don't sell or share any information with third parties</p>
+                    <p>✓ We don't use cookies to track you</p>
+                    <p>✓ We don't store sensitive authentication data</p>
+                    <p class="text-blue-400 font-semibold">Your privacy and security are our top priority!</p>
+                `
+            },
+            terms: {
+                title: "Terms of Service",
+                content: `
+                    <p><strong>By Using Growtify:</strong></p>
+                    <p>✓ You agree to use our strategies ethically and legally</p>
+                    <p>✓ You understand Instagram's terms and community guidelines</p>
+                    <p>✓ You take responsibility for your own account</p>
+                    <p>✓ You won't use our information to harm others</p>
+                    <p><strong>Disclaimer:</strong></p>
+                    <p>Results vary based on consistency, content quality, and niche. We don't guarantee specific follower numbers or engagement rates.</p>
+                    <p>Growtify is not affiliated with Instagram or Meta Platforms.</p>
+                `
+            },
+            security: {
+                title: "Security Measures 🔐",
+                content: `
+                    <p><strong>How We Secure Your Data:</strong></p>
+                    <p>🔒 Industry-Standard Encryption - Military-grade security protocols</p>
+                    <p>🔐 TLS 1.3 - Advanced encryption for data in transit</p>
+                    <p>🛡️ AES-256 - Advanced encryption for data at rest</p>
+                    <p>🔑 Zero Password Storage - We never store your credentials</p>
+                    <p>📱 Privacy First - Limited data collection, only what's necessary</p>
+                    <p>⏱️ Regular Updates - Security tested and updated regularly</p>
+                    <p>🚨 Transparent - We're open about our security practices</p>
+                    <p class="text-green-400 font-semibold mt-4">Your account is protected with bank-level security!</p>
+                `
+            }
+        };
+
+        function openModal(type) {
+            const content = modalContent[type];
+            if (content) {
+                document.getElementById('modal-title').textContent = content.title;
+                document.getElementById('modal-content').innerHTML = content.content;
+                document.getElementById('modal').classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        function toggleFaq(num) {
+            const content = document.getElementById(`faq-content-${num}`);
+            const icon = document.getElementById(`faq-icon-${num}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.textContent = '▲';
+            } else {
+                content.classList.add('hidden');
+                icon.textContent = '▼';
+            }
+        }
+
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
